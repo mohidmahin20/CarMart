@@ -22,11 +22,10 @@ def user_register(request):
     return render(request, "register.html", {"form": register_form, "type": "Sign Up"})
 
 
-# class based view number 1
 class UserLoginView(LoginView):
     template_name = "register.html"
 
-    # success_url = reverse_lazy('profile')
+    
     def get_success_url(self):
         return reverse_lazy("home")
 

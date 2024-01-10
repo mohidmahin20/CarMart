@@ -4,4 +4,4 @@ from django.http import HttpResponse
 
 # Create your views here.
 def brand(request):
-    return HttpResponse("hello from brand")
+    return HttpResponse("brand page")
